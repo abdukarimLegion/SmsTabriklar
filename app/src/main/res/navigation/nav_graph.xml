@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.naa.uz.smstabriklar.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_otaOnaFragment"
+            app:destination="@id/otaOnaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sevgiFragment2"
+            app:destination="@id/sevgiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_hazilFragment"
+            app:destination="@id/hazilFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_dostlikFragment"
+            app:destination="@id/dostlikFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_saqlanganlarFragment"
+            app:destination="@id/saqlanganlarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_yangilarFragment"
+            app:destination="@id/yangilarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tabrikFragment"
+            app:destination="@id/tabrikFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_soginchFragment"
+            app:destination="@id/soginchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sevgiFragment"
+        android:name="com.naa.uz.smstabriklar.SevgiFragment"
+        android:label="fragment_sevgi"
+        tools:layout="@layout/fragment_sevgi" />
+    <fragment
+        android:id="@+id/soginchFragment"
+        android:name="com.naa.uz.smstabriklar.SoginchFragment"
+        android:label="fragment_soginch"
+        tools:layout="@layout/fragment_soginch" />
+    <fragment
+        android:id="@+id/tabrikFragment"
+        android:name="com.naa.uz.smstabriklar.TabrikFragment"
+        android:label="fragment_tabrik"
+        tools:layout="@layout/fragment_tabrik" />
+    <fragment
+        android:id="@+id/otaOnaFragment"
+        android:name="com.naa.uz.smstabriklar.OtaOnaFragment"
+        android:label="fragment_ota_ona"
+        tools:layout="@layout/fragment_ota_ona" />
+    <fragment
+        android:id="@+id/dostlikFragment"
+        android:name="com.naa.uz.smstabriklar.DostlikFragment"
+        android:label="fragment_dostlik"
+        tools:layout="@layout/fragment_dostlik" />
+    <fragment
+        android:id="@+id/hazilFragment"
+        android:name="com.naa.uz.smstabriklar.HazilFragment"
+        android:label="fragment_hazil"
+        tools:layout="@layout/fragment_hazil" />
+    <fragment
+        android:id="@+id/yangilarFragment"
+        android:name="com.naa.uz.smstabriklar.YangilarFragment"
+        android:label="fragment_yangilar"
+        tools:layout="@layout/fragment_yangilar" />
+    <fragment
+        android:id="@+id/saqlanganlarFragment"
+        android:name="com.naa.uz.smstabriklar.SaqlanganlarFragment"
+        android:label="fragment_saqlanganlar"
+        tools:layout="@layout/fragment_saqlanganlar" />
+</navigation>
